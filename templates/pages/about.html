@@ -68,7 +68,87 @@
 </div>
 <!-- Service center end -->
 
+<!-- Featured car start -->
+<div class="featured-car content-area-5">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>Featured <span>Cars</span></h1>
+        </div>
+        <!-- Slick slider area start -->
+        <div class="slick-slider-area clearfix">
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                
+              {% for cars in featured_cars %}  
+                <div class="slick-slide-item">
+                    <div class="car-box-3">
+                        <div class="car-thumbnail">
+                            <a href="car-details.html" class="car-img">
+                                <div class="tag-2">Featured</div>
+                                <div class="price-box">
+                                    <span>${{cars.price}}.00</span>
+                                </div>
+                                <img class="d-block w-100" src="{{cars.car_photo.url}}" alt="car">
+                            </a>
+                            <div class="carbox-overlap-wrapper">
+                                <div class="overlap-box">
+                                    <div class="overlap-btns-area">
+                                        <div class="car-magnify-gallery">
+                                            <a href="{{cars.car_photo.url}}" class="overlap-btn" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                                <i class="fa fa-expand"></i>
+                                                <img class="hidden" src="{{cars.car_photo.url}}" alt="hidden-img">
+                                            </a>
+                                            <a href="{{cars.car_photo1.url}}" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                                <img class="hidden" src="{{cars.car_photo1.url}}" alt="hidden-img">
+                                            </a>
+                                            <a href="{{cars.car_photo2.url}}" class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                                <img class="hidden" src="{{cars.car_photo2.url}}" alt="hidden-img">
+                                            </a>
+                                            <a href="{{cars.car_photo3.url}}" class="hidden" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                                <img class="hidden" src="{{cars.car_photo3.url}}" alt="hidden-img">
+                                            </a>
+                                            <a href="{{cars.car_photo4.url}}" class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                                <img class="hidden" src="{{cars.car_photo4.url}}" alt="hidden-img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <h1 class="title">
+                                <a href="car-details.html">{{cars.car_title}}</a>
+                            </h1>
+                            <div class="location">
+                                <a href="car-details.html">
+                                    <i class="flaticon-pin"></i>{{cars.county}},
+                                </a>
+                            </div>
+                            <ul class="facilities-list clearfix">
+                                <li>{{cars.fuel_type}}</li>
+                                <li>{{cars.mileage}} km</li>
+                                <li>{{cars.color}}</li>
+                                <li>{{cars.year}}</li>
+                                <li>{{cars.condition}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              {% endfor %}
 
+            </div>
+            <div class="slick-btn">
+                <div class="slick-prev slick-arrow-buton sab-4">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="slick-next slick-arrow-buton sab-3">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Featured car end -->
 
 <!-- Our team start -->
 <div class="our-team content-area bg-grea-3">
@@ -76,7 +156,6 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Meet Our <span>Team</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
         </div>
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">

@@ -363,7 +363,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 .tag {
-    background:#5e18ea;
+    background:#f0151f;
 }
 
 .view-all ul li a:hover{
