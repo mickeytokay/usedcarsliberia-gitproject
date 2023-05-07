@@ -1370,6 +1370,11 @@ input[type=checkbox]:checked + label:before {
     background: #fff;
 }
 
+.search-fields .form-group:hover {
+    color: #fff;
+    background: #0177b5;
+}
+
 .form-control {
     padding-left: 15px;
 }
