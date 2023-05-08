@@ -47,9 +47,3 @@ def contact(request):
         'teams': teams,
     }
     return render(request, 'pages/contact.html',data)
-
-def login(request):
-    return render(request, 'pages/login.html')
-
-def register(request):
-    return render(request, 'pages/register.html')

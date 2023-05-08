@@ -25,7 +25,8 @@ strong {
 }
 
 span {
-    color: #535353;
+    color: #fff;
+    padding-right: 10px;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -391,6 +392,10 @@ button:focus {
         -webkit-transform: scale(1.2) translateX(-100px)
     }
 }
+
+
+     
+
 
 @media all and (max-width: 767px) {
     .flex-direction-nav {
@@ -5516,6 +5521,7 @@ footer {
     margin-bottom: 0;
     text-align: center;
     font-size: 15px;
+    margin-top: 20px;
 }
 
 .contact-section .form-section p a{
@@ -8759,6 +8765,7 @@ table {
     }
 
     .main-title {
+        margin-top: 30px;
         margin-bottom: 40px;
     }
 
@@ -8808,6 +8815,7 @@ table {
 
     .main-title h1 {
         font-size: 30px;
+        margin-top: 30px;
         margin-bottom: 10px;
     }
 
@@ -9736,7 +9744,7 @@ input, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
         color: #495057 !important;
 }
 .contact-dealer.modal-header{
-    background: #f0151f !important;
+    background: #5e18ea !important;
 }
 .contact-dealer.modal-header img{
     width: 75% !important;
