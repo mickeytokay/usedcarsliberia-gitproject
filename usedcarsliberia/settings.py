@@ -152,6 +152,6 @@ MESSAGE_TAGS = {
 #Email Message
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'dunnocktechnology@gmail.com'
-EMAIL_HOST_PASSWORD = 'pkkocjuszngruobp'
+EMAIL_HOST_USER = 'developer.dunnock@gmail.com'
+EMAIL_HOST_PASSWORD = 'xvomvqowjglbuucd'
 EMAIL_USE_TLS = True
